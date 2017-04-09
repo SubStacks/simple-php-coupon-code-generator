@@ -1,0 +1,17 @@
+{
+    "authors": [
+        {
+            "email": "james@jppreusdev.com",
+            "name": "James Preus Jr <@JPPreusDev>",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SubStacks\\simple-php-coupon-code-generator\\": ""
+        }
+    },
+    "description": "Simple PHP coupon code generator to genrate N number of coupons.",
+    "license": "MIT",
+    "name": "substacks/simple-php-coupon-code-generator"
+}
