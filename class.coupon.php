@@ -6,7 +6,10 @@
  * @author Joash Pereira
  * @date  2015-06-05
  */
-class coupon {
+
+namespace SubStacks\SMS_Marketing;
+
+class Coupon {
     CONST MIN_LENGTH = 8;
     
     /**
