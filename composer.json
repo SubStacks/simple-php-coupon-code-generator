@@ -8,7 +8,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "SubStacks\\simple-php-coupon-code-generator\\": ""
+            "SubStacks\\SMS_Marketing\\Coupons": ""
         }
     },
     "description": "Simple PHP coupon code generator to genrate N number of coupons.",
