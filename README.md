@@ -26,7 +26,7 @@ HTML, CSS, JS, PHP
 <code>	    'suffix' => '',</code><br/>
 <code>	    'length' => 10,</code><br/>
 <code>	    'letters' => false,</code><br/>
-<code>	    'numbers' => true</code>v
+<code>	    'numbers' => true</code><br/>
 <code>);</code><br/>
 <code>$coupon_code = SubStacks\SMS_Marketing\Coupon::generate_coupons($coupon_code_options);</code>
 <br/><br/>
