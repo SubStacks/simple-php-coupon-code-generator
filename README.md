@@ -22,11 +22,11 @@ HTML, CSS, JS, PHP
 <h3>Usage</h3>
 <h4>SubStacks General Usage</h4>
 <code>$coupon_code_options = array(</code><br/>
-<code>    'prefix' => '',</code><br/>
-<code>    'suffix' => '',</code><br/>
-<code>    'length' => 10,</code><br/>
-<code>    'letters' => false,</code><br/>
-<code>    'numbers' => true</code>v
+<code>	    'prefix' => '',</code><br/>
+<code>	    'suffix' => '',</code><br/>
+<code>	    'length' => 10,</code><br/>
+<code>	    'letters' => false,</code><br/>
+<code>	    'numbers' => true</code>v
 <code>);</code><br/>
 <code>$coupon_code = SubStacks\SMS_Marketing\Coupon::generate_coupons($coupon_code_options);</code>
 <br/><br/>
