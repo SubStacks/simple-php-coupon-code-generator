@@ -20,6 +20,19 @@ HTML, CSS, JS, PHP
 </ul>
 
 <h3>Usage</h3>
+SubStacks) Genral Use
+<br/>
+<code>
+$coupon_code_options = array(
+    'prefix' => '',
+    'suffix' => '',
+    'length' => 10,
+    'letters' => false,
+    'numbers' => true
+);
+$coupon_code = SubStacks\SMS_Marketing\Coupon::generate_coupons($coupon_code_options);
+</code>
+<br/><br/>
 1) Dynamic length
 <br/>
 <code>
