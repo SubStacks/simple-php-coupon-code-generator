@@ -1,4 +1,10 @@
 <h1>Simple PHP Coupon Code Generator</h1>
+[![Latest Stable Version](https://poser.pugx.org/substacks/simple-php-coupon-code-generator/v/stable?format=flat-square)](https://packagist.org/packages/substacks/simple-php-coupon-code-generator)
+[![Total Downloads](https://poser.pugx.org/substacks/simple-php-coupon-code-generator/downloads?format=flat-square)](https://packagist.org/packages/substacks/simple-php-coupon-code-generator)
+[![Daily Downloads](https://poser.pugx.org/substacks/simple-php-coupon-code-generator/d/daily?format=flat-square)](https://packagist.org/packages/substacks/simple-php-coupon-code-generator)
+[![Latest Unstable Version](https://poser.pugx.org/substacks/simple-php-coupon-code-generator/v/unstable?format=flat-square)](https://packagist.org/packages/substacks/simple-php-coupon-code-generator)
+[![License](https://poser.pugx.org/substacks/simple-php-coupon-code-generator/license?format=flat-square)](https://packagist.org/packages/substacks/simple-php-coupon-code-generator)
+[![composer.lock](https://poser.pugx.org/substacks/simple-php-coupon-code-generator/composerlock?format=flat-square)](https://packagist.org/packages/substacks/simple-php-coupon-code-generator)
 <p>
 Coupon code generator this is php class, which provides the ability to generate coupon codes on various parameters. 
 Its key feature is the generation of a coupon code on a mask like this “XXXXXX” or “prefix-XXXX-XXXX-suffix” 
