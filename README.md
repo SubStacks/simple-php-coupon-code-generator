@@ -26,8 +26,8 @@ HTML, CSS, JS, PHP
   * Export codes to excel sheet
 
 
-### Usage
-#### SubStacks General Usage
+## Usage
+### SubStacks General Usage
 ```php
 $coupon_code_options = array(</code><br/>
 	    'prefix' => '',</code><br/>
