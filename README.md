@@ -1,89 +1,93 @@
-<h1>Simple PHP Coupon Code Generator</h1>
+# Simple PHP Coupon Code Generator
 [![Latest Stable Version](https://poser.pugx.org/substacks/simple-php-coupon-code-generator/v/stable)](https://packagist.org/packages/substacks/simple-php-coupon-code-generator)
 [![Total Downloads](https://poser.pugx.org/substacks/simple-php-coupon-code-generator/downloads)](https://packagist.org/packages/substacks/simple-php-coupon-code-generator)
 [![Daily Downloads](https://poser.pugx.org/substacks/simple-php-coupon-code-generator/d/daily)](https://packagist.org/packages/substacks/simple-php-coupon-code-generator)
 [![Latest Unstable Version](https://poser.pugx.org/substacks/simple-php-coupon-code-generator/v/unstable)](https://packagist.org/packages/substacks/simple-php-coupon-code-generator)
 [![License](https://poser.pugx.org/substacks/simple-php-coupon-code-generator/license)](https://packagist.org/packages/substacks/simple-php-coupon-code-generator)
 [![composer.lock](https://poser.pugx.org/substacks/simple-php-coupon-code-generator/composerlock)](https://packagist.org/packages/substacks/simple-php-coupon-code-generator)
-<p>
+
+
 Coupon code generator this is php class, which provides the ability to generate coupon codes on various parameters. 
 Its key feature is the generation of a coupon code on a mask like this “XXXXXX” or “prefix-XXXX-XXXX-suffix” 
 where ‘X’ – random symbol, ‘-’ – custom separator.
-</p>
-<br/>
-<h3>Technology used</h3>
+
+
+### Technology used
 HTML, CSS, JS, PHP
 
-<h3>Key Feature</h3>
-<ul>
-    <li>Support prefix- and –suffix</li>
-    <li>Support any coupon mask</li>
-	<li>Support all numbers, alphabets, symbols</li>
-	<li>Support different lenghts</li>
-	<li>Generate N number of coupons</li>
-	<li>Simple Portal</li>
-	<li>Export codes to excel sheet</li>
-</ul>
 
-<h3>Usage</h3>
-<h4>SubStacks General Usage</h4>
-<code>$coupon_code_options = array(</code><br/>
-<code>	    'prefix' => '',</code><br/>
-<code>	    'suffix' => '',</code><br/>
-<code>	    'length' => 10,</code><br/>
-<code>	    'letters' => false,</code><br/>
-<code>	    'numbers' => true</code><br/>
-<code>);</code><br/>
-<code>$coupon_code = SubStacks\SMS_Marketing\Coupon::generate_coupons($coupon_code_options);</code>
-<br/><br/>
+### Key Feature
+* Support prefix- and –suffix
+* Support any coupon mask
+  * Support all numbers, alphabets, symbols
+  * Support different lenghts
+  * Generate N number of coupons
+  * Simple Portal
+  * Export codes to excel sheet
+
+
+### Usage
+#### SubStacks General Usage
+```php
+$coupon_code_options = array(</code><br/>
+	    'prefix' => '',</code><br/>
+	    'suffix' => '',</code><br/>
+	    'length' => 10,</code><br/>
+	    'letters' => false,</code><br/>
+	    'numbers' => true</code><br/>
+);
+```
+
+```php
+$coupon_code = SubStacks\SMS_Marketing\Coupon::generate_coupons($coupon_code_options);
+```
+
 1) Dynamic length
-<br/>
-<code>
+```php
 	coupon::generate(8);  	// J5BST6NQ
-</code>
-<br/><br/>
-2) Using prefix
-<br/>
-<code>
-	coupon::generate(6, ”XYZ-”);    // XYZ-NT163E
-</code>
-<br/><br/>
-3) Using suffix
-<br/>
-<code>
-	coupon::generate(6, ”XYZ-”, “-ABC”);    // XYZ-TC2MSD-ABC
-</code>
-<br/><br/>
-4) Without numbers
-<br/>
-<code>
-	coupon::generate(6, ””, ””, false);    // LNTDRS
-</code>
-<br/><br/>
-5) Without letters
-<br/>
-<code>
-	coupon::generate(6, ””, ””, true, false);    // 835710
-</code>
-<br/><br/>
-6) With symbols
-<br/>
-<code>
-	coupon::generate(6, ””, ””, true, true, true);    // #H5&S!7
-</code>
-<br/><br/>
-7) Random register <small>(includes lower and uppercase)</small>
-<br/>
-<code>
-	coupon::generate(6, ””, ””, true, true, false, true);    // aT4hB2
-</code>
-<br/><br/>
-8) With custom Mask <small>Note: length does not matter</small>
-<br/>
-<code>
-	coupon::generate(1, ””, ””, true, true, false, false, “XXXXXX”);    // STG6N8
-</code>
-<br/><br/>
+```
 
-<h2>License</h2>
+2) Using prefix
+```php
+	coupon::generate(6, ”XYZ-”);    // XYZ-NT163E
+```
+
+
+3) Using suffix
+```php
+	coupon::generate(6, ”XYZ-”, “-ABC”);    // XYZ-TC2MSD-ABC
+```
+
+
+4) Without numbers
+```php
+	coupon::generate(6, ””, ””, false);    // LNTDRS
+```
+
+
+5) Without letters
+```php
+	coupon::generate(6, ””, ””, true, false);    // 835710
+```
+
+
+6) With symbols
+```php
+	coupon::generate(6, ””, ””, true, true, true);    // #H5&S!7
+```
+
+
+7) Random register (includes lower and uppercase)
+```php
+	coupon::generate(6, ””, ””, true, true, false, true);    // aT4hB2
+```
+
+
+8) With custom Mask (Note: length does not matter)
+```php
+	coupon::generate(1, ””, ””, true, true, false, false, “XXXXXX”);    // STG6N8
+```
+
+
+## License
 Simple PHP Coupon Code Generator is licensed under the <a href="http://sam.zoy.org/wtfpl/">WTFPL license</a>.
